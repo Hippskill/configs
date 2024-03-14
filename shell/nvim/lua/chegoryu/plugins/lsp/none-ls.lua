@@ -80,11 +80,11 @@ return {
             diagnostics.golangci_lint.with(golangci_lint_options),
 
             -- Rust.
-            formatting.rustfmt.with({
-                extra_args = {
-                    "--edition=2021",
-                },
-            }),
+            -- formatting.rustfmt.with({
+            --     extra_args = {
+            --         "--edition=2021",
+            --     },
+            -- }),
 
             -- Lua.
             formatting.stylua,
@@ -98,11 +98,11 @@ return {
                     "--tab-width=4",
                 },
             }),
-            diagnostics.eslint_d.with({
-                condition = function(utils)
-                    return utils.root_has_file(".eslintrc.js") or utils.root_has_file(".eslintrc.json")
-                end,
-            }),
+            -- diagnostics.eslint_d.with({
+            --     condition = function(utils)
+            --         return utils.root_has_file(".eslintrc.js") or utils.root_has_file(".eslintrc.json")
+            --     end,
+            -- }),
         }
 
         -- This if is required because we do not want to install csharpier.
