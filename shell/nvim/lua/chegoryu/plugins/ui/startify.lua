@@ -1,5 +1,5 @@
 return {
-    "mhinz/vim-startify",
-    config = function() end,
-    opts = {},
+    -- "mhinz/vim-startify",
+    -- config = function() end,
+    -- opts = {},
 }

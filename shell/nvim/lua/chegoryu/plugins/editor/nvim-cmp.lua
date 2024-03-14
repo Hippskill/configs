@@ -35,6 +35,7 @@ return {
                 ["<C-k>"] = cmp.mapping.select_prev_item(),
                 -- Next suggestion.
                 ["<C-j>"] = cmp.mapping.select_next_item(),
+                ["<Tab>"] = cmp.mapping.select_next_item(),
                 -- Show completion suggestions.
                 ["<C-Space>"] = cmp.mapping.complete(),
                 -- Close completion window.
@@ -46,7 +47,7 @@ return {
 
                 -- Confirm by enter or tab.
                 ["<CR>"] = cmp.mapping.confirm({ select = false }),
-                ["<Tab>"] = cmp.mapping.confirm({ select = false }),
+                -- ["<Tab>"] = cmp.mapping.confirm({ select = false }),
             }),
             -- Sources for autocompletion.
             sources = cmp.config.sources({
