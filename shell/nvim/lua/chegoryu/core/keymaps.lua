@@ -58,13 +58,9 @@ keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", {
 ---nmikhaylov setup------
 -------------------------
 
--- keymap.set("n", "<C-e>", "<cmd>Vexplore<CR>")
--- keymap.set("n", "<C-p>", "<cmd>Startify<CR>")
-
+keymap.set("n", "<C-p>", "<cmd>Startify<CR>")
 keymap.set("n", "<C-u>", "<cmd>redo<CR>")
 keymap.set("n", ":fs", "<cmd>ClangdSwitchSourceHeader<CR>")
 keymap.set("n", ":FS", "<cmd>ClangdSwitchSourceHeader<CR>")
 keymap.set("n", "<S-j>", "<Nop>")
-keymap.set("n", "<C-l>", "<C-w>v<CR>")
-
 keymap.set("v", "p", '"_dP')
