@@ -75,6 +75,9 @@ return {
         keymap.set("n", "<leader>ft", "<cmd>Telescope find_template type=insert<CR>", {
             desc = "Find template. (from template.nvim plugin).",
         })
+        keymap.set("n", "<leader>fo", "<cmd>Telescope oldfiles<CR>", {
+            desc = "Find oldfiles.",
+        })
 
         -- Git commands.
 

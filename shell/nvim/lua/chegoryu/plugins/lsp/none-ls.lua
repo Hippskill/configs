@@ -17,17 +17,19 @@ return {
         local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
         local function is_autoformatting_enabled(filetype)
-            local filetype_whitelist = {
-                "lua",
-            }
+            return true
 
-            for _, filetype_from_whitelist in pairs(filetype_whitelist) do
-                if filetype == filetype_from_whitelist then
-                    return true
-                end
-            end
+            -- local filetype_whitelist = {
+            --     "lua",
+            -- }
 
-            return false
+            -- for _, filetype_from_whitelist in pairs(filetype_whitelist) do
+            --     if filetype == filetype_from_whitelist then
+            --         return true
+            --     end
+            -- end
+
+            -- return false
         end
 
         local black_options = {
