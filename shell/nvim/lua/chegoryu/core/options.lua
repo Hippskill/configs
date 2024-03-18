@@ -80,3 +80,6 @@ opt.splitbelow = true
 
 -- Consider string-string as whole word.
 opt.iskeyword:append("-")
+
+-- nmikhaylov setup
+opt.virtualedit = "all"
