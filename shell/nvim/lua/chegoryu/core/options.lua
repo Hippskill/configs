@@ -83,3 +83,8 @@ opt.iskeyword:append("-")
 
 -- nmikhaylov setup
 opt.virtualedit = "all"
+vim.opt.undodir = "/home/nmikhaylov/.vim/neoundo"
+vim.opt.undofile = true
+vim.opt.undolevels = 10000
+vim.opt.undoreload = 10000
+vim.opt.swapfile = false
