@@ -36,6 +36,7 @@ return {
                 -- Next suggestion.
                 ["<C-j>"] = cmp.mapping.select_next_item(),
                 ["<Tab>"] = cmp.mapping.select_next_item(),
+                ["<S-Tab>"] = cmp.mapping.select_prev_item(),
                 -- Show completion suggestions.
                 ["<C-Space>"] = cmp.mapping.complete(),
                 -- Close completion window.

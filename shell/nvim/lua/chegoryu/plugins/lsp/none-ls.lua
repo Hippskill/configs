@@ -17,7 +17,7 @@ return {
         local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
         local function is_autoformatting_enabled(filetype)
-            return true
+            return filetype ~= "yaml"
 
             -- local filetype_whitelist = {
             --     "lua",
@@ -61,7 +61,7 @@ return {
         }
 
         if config.IS_PINELY then
-            clang_format_options.command = "clang-format-17"
+            clang_format_options.command = "clang-format-18"
             golangci_lint_options.condition = function()
                 return true
             end
