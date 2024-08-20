@@ -24,17 +24,19 @@ return {
                 return true
             end
 
-            local filetype_whitelist = {
-                "lua",
-            }
+            -- nmikhaylov setup
+            return filetype ~= "yaml"
+            -- local filetype_whitelist = {
+            --     "lua",
+            -- }
 
-            for _, filetype_from_whitelist in pairs(filetype_whitelist) do
-                if filetype == filetype_from_whitelist then
-                    return true
-                end
-            end
+            -- for _, filetype_from_whitelist in pairs(filetype_whitelist) do
+            --     if filetype == filetype_from_whitelist then
+            --         return true
+            --     end
+            -- end
 
-            return false
+            -- return false
         end
 
         local black_options = {
