@@ -82,3 +82,11 @@ opt.splitbelow = true
 
 -- Consider string-string as whole word.
 opt.iskeyword:append("-")
+
+-- nmikhaylov setup
+opt.virtualedit = "all"
+opt.undodir = "/home/nmikhaylov/.vim/neoundo"
+opt.undofile = true
+opt.undolevels = 10000
+opt.undoreload = 10000
+opt.swapfile = false

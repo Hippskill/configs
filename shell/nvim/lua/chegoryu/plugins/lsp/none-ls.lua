@@ -23,18 +23,20 @@ return {
             if config.FORMAT_ON_SAVE_ALL then
                 return true
             end
+            -- nmikhaylov setup JSON json from here!!!!
+            return filetype ~= "json" and filetype ~= "yaml"
 
-            local filetype_whitelist = {
-                "lua",
-            }
+            -- local filetype_whitelist = {
+            --     "lua",
+            -- }
 
-            for _, filetype_from_whitelist in pairs(filetype_whitelist) do
-                if filetype == filetype_from_whitelist then
-                    return true
-                end
-            end
+            -- for _, filetype_from_whitelist in pairs(filetype_whitelist) do
+            --     if filetype == filetype_from_whitelist then
+            --         return true
+            --     end
+            -- end
 
-            return false
+            -- return false
         end
 
         local black_options = {

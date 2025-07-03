@@ -53,3 +53,12 @@ keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", {
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", {
     desc = "Go to previous tab.",
 })
+
+---nmikhaylov setup------
+-------------------------
+keymap.set("n", "<C-p>", "<cmd>Startify<CR>")
+keymap.set("n", "<C-u>", "<cmd>redo<CR>")
+keymap.set("n", ":fs", "<cmd>ClangdSwitchSourceHeader<CR>")
+keymap.set("n", ":FS", "<cmd>ClangdSwitchSourceHeader<CR>")
+keymap.set("n", "<S-j>", "<Nop>")
+keymap.set("v", "p", '"_dP')
